@@ -1,0 +1,16 @@
+.slide {
+  background-color: #f3f3f3;
+  height: 100vh;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  height: 300px;
+  background-color: red;
+  padding: 20px;
+}
+
+.details {
+  background-color: teal;
+}
