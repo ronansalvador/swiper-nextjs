@@ -43,7 +43,7 @@ function Carousel() {
   const [slidePerView, setSlidePerView] = useState(3)
   const handleResize = () => {
     if (window.innerWidth < 768) {
-      setSlidePerView(2)
+      setSlidePerView(1)
     }
 
     if (window.innerWidth >= 768 && window.innerWidth < 1280) {
