@@ -70,15 +70,15 @@ function Carousel() {
   }, [])
   return (
     <div className={style.slide}>
+      <div className={style.left}></div>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         navigation
-        // pagination={{ clickable: true }}
         // scrollbar={{ draggable: true }}
         // onSwiper={(swiper) => console.log(swiper)}
         // onSlideChange={() => console.log('slide change')}
         centeredSlides={true} // Define centeredSlides como true para centralizar os slides
-        spaceBetween={10} // Espaço entre os slides (opcional)
+        spaceBetween={80} // Espaço entre os slides (opcional)
         slidesPerView={slidePerView} // Quantidade de slides visíveis ao mesmo tempo
         pagination={{ clickable: true }} // Configuração da paginação (opcional)
         loop={true} // Define o loop como verdadeiro para tornar o Swiper infinito
@@ -91,6 +91,7 @@ function Carousel() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className={style.right}></div>
     </div>
   )
 }
